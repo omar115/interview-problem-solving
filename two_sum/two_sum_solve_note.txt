@@ -1,9 +1,0 @@
-Time Complexity:
-Solution-1:
-if we go with iteration approach going index by index,
-Time Complexity is O(n^2)
-
-Solution-2:
-If we go with hash table or hashing approach,
-time Complexity is O(n)
-
