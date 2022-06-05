@@ -1,2 +1,7 @@
 # leetcode_practice
-This repo contains the lectures and other resources to learn and practice leetcode problems. A beginner friendly guide for anyone to learn something new for anyone who wants to sharpen their programming skills.
+In this repo, I will practice leetcode problems for my coding interview.
+Also, I will try to give some tutorials so that anyone using this repo 
+can understand the context of the problem and solve it.
+
+I will solve all the problems in `Python` which is my favorite programming
+language. In future, I will try to add other languages.
