@@ -2,6 +2,12 @@
 leetcode: Palindrome Number
 link: https://leetcode.com/problems/palindrome-number/
 
+
+Most possible solution types:
+- string slicing
+- mathematically expressions
+- two pointers
+
 """
 
 class Solution:
