@@ -6,6 +6,7 @@ If such pair exists, return the pair in any order; otherwise return an empty arr
 We cannot add a number to itself to get the target sum.
 '''
 
+'''
 # bad approach: 
 # time: O(n^2)
 # space: 0(1)
@@ -25,3 +26,5 @@ def two_number_sum(nums, target):
     return []
 
 print(two_number_sum([1,2,5,7,4], 7))
+
+'''
