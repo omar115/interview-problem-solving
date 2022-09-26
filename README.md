@@ -50,8 +50,8 @@ My solutions to 160 coding interview questions on [AlgoExpert](https://www.algoe
 
 | Question                                                                          | Difficulty | Category             | Approach                 | Good to review |
 | --------------------------------------------------------------------------------- | ---------- | -------------------- | ------------------------ | -------------- |
-| [Two Number Sum](AlgoExpert/Easy/two_number_sum.py)                                         | 🟢         | Arrays               | Hash Table, Two Pointers |                |
-| [Validate Subsequence](/Easy/validate-subsequence.md)                             | 🟢         | Arrays               | Two Pointers             |                |
+| [Two Number Sum](AlgoExpert/Easy/two-number-sum/two_number_sum.py)                                         | 🟢         | Arrays               | Hash Table, Two Pointers |                |
+| [Validate Subsequence](AlgoExpert/Easy/validate-subsequence/validate_subsequence.py)                             | 🟢         | Arrays               | Two Pointers             |                |
 | [Three Number Sum](/Medium/three-number-sum.md)                                   | 🔵         | Arrays               | Two Pointers             |                |
 | [Sorted Squared Array](/Easy/sorted-squared-array.md)                             | 🟢         | Arrays               | Two Pointers             | ✅             |
 | [Tournament Winner](/Easy/tournament-winner.md)                                   | 🟢         | Arrays               | Hash Table               |                |
