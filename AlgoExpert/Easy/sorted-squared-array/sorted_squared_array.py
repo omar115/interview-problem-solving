@@ -20,20 +20,25 @@ output = [100, 25, 9, 4, 1]
 
 # print(sorted_squared_array([-3, -1, 2, 5, 10]))
 
-# approach: two pointers, 
+# approach: two pointers, O(n) time | O(n) space
 
 def sorted_squared_array(array):
-    left = 0
-    right = len(array) - 1
-    while left < right:
-        if array[left]**2 > array[right]**2:
-            array[left] = array[right]**2
-            left += 1
-        
+    sortedSquare = [0 for _ in array]
+    smallerValueIdx = 0
+    largerValueIdx = len(array) - 1
+    
+    for idx in reversed(range(len(array))):
+        smallerValue = array[smallerValueIdx]
+        largerValue = array[largerValueIdx]
+
+        if abs(smallerValue) > abs(largerValue):
+            sortedSquare[idx] = smallerValue * smallerValue
+            smallerValueIdx += 1
         else:
-            array[left] = array[left]**2
-            left += 1
-    return array
+            sortedSquare[idx] = largerValue * largerValue
+            largerValueIdx -= 1
+    
+    return sortedSquare
 
 print(sorted_squared_array([-4, 1, 2]))
 
