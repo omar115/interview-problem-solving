@@ -16,17 +16,6 @@ Output: true
 '''
 
 # two pointers | O(n) time | O(1) space
-# def validateSubsequence(array, sequence):
-#     arrIdx = 0
-#     seqIdx = 0
-#     while arrIdx < array.length() and seqIdx < sequence.length():
-#         if array[arrIdx] == sequence[seqIdx]:
-#             seqIdx += 1
-#         arrIdx += 1
-#     return seqIdx == len(sequence)
-
-
-# two pointers | O(n) time | O(1) space
 def validateSubsequence(array, sequence):
     seqIdx = 0
     for value in array:
@@ -37,4 +26,4 @@ def validateSubsequence(array, sequence):
 
     return seqIdx == len(sequence)
 
-print(validateSubsequence[1, 2, 3, 4, 5, 6], [1, 3, 5])
+print(validateSubsequence([1, 2, 3, 4, 5, 6], [1, 3, 5]))
