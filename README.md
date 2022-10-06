@@ -39,6 +39,34 @@ language. In future, I will try to add other languages.
 -------------------------------
 My solutions to 160 coding interview questions on [AlgoExpert](https://www.algoexpert.io)
 
+
+### List of easy questions
+- validate subsequence
+- two number sum
+- sorted squared array
+- tournament winner
+- non constructible change
+- find closest value in bst
+- branch sums
+- node depths
+- depth-first-search
+- minimum waiting time
+- class photos
+- tandem bicycle
+- remove duplicates from linked list
+- nth fibonacci
+- product sum
+- binary search
+- find three largest numbers
+- bubble sort
+- insertion sort
+- selection sort
+- palindrome check
+- caeser cipher encryptor
+- run-length encoding
+- generate document
+- first non repeating character
+
 #### Difficulty Levels
 
 🟢 Easy  
