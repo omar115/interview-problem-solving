@@ -11,7 +11,8 @@ there will be only one tournament winner.
 We are given two inputs, the competitions array and the results array. 
 We need to write a function that returns the winner of the tournament, 
 or more specifically, the name of the team that has the most number of points. 
-The competitions array is an array of pairs, representing all of the competitions in the tournament. 
+The competitions array is an array of pairs,
+representing all of the competitions in the tournament. 
 Inside of these pairs, we have two strings: the first one is the name of the home team and 
 the second one is the name of the away team. 
 The results array represents the winner of each of these competitions. 
