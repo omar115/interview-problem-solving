@@ -20,4 +20,19 @@ Inside the results array, a 1 means that the home team won and a 0 means the awa
 The results array is the same length as the competitions array, and 
 the indices in the results array correspond with the indices in the competitions array.
 
+examples:
+
+input:
+    competitions = [
+    ["html", "c#"],
+    ["c#", "python"],
+    ["python", "html"]
+    ]
+
+    results = [0, 0, 1]
+
+output: 
+    "python"
+
 """
+
