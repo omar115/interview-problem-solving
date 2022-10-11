@@ -1,7 +1,6 @@
 """
 We're asked to imagine there is an algorithms tournament in which multiple teams 
-compete against each other. 
-In each competition there will be two teams that compete. 
+compete against each other. In each competition there will be two teams that compete. 
 There will be one winner and one loser out of all of these competitions and there are no ties. 
 Each team will compete against all other teams exactly once. 
 A team gets 3 points for each competition it wins and 0 points for each competition it loses. 
@@ -31,8 +30,39 @@ input:
 
     results = [0, 0, 1]
 
-output: 
-    "python"
+output: "python"
 
 """
 
+HOME_TEAM_WON = 1
+
+def tournament_winner(competitions: list, results: list):
+    """
+    A function that returns the winner of each of these competitions
+    """
+    current_best_team = ""
+    scores = {current_best_team: 0}
+
+    for idx, competition in enumerate(competitions):
+        result = results[idx]
+        home_team, away_team = competition
+
+        winning_team = home_team if result == HOME_TEAM_WON else away_team
+
+        update_scores(winning_team, 3, scores)
+
+        if scores[winning_team] > scores[current_best_team]:
+            current_best_team = winning_team
+
+    return current_best_team
+
+def update_scores(team, points, scores):
+    """
+    update_scores
+    """
+    if team not in scores:
+        scores[team] = 0
+
+    scores[team] += points
+
+print(tournament_winner(competitions=[["html", "c#"], ["c#", "python"], ["python", "html"]],results=[0, 0, 1]))
