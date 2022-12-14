@@ -7,9 +7,9 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'rakizo-dev'
-copyright = '2022, rakizo'
-author = 'rakizo'
-release = '0.0.0'
+copyright = '2022, omar'
+author = 'omar'
+release = '0.0.1'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -18,11 +18,13 @@ extensions = [
     "sphinx_multiversion",
 ]
 
-templates_path = ['_templates']
+templates_path = [
+    "_templates",
+]
+
 html_sidebars = {
     '**': [
         'versioning.html',
-        'versions.html',
     ],
 }
 exclude_patterns = []
@@ -34,3 +36,9 @@ exclude_patterns = []
 
 html_theme = 'alabaster'
 html_static_path = ['_static']
+
+smv_tag_whitelist = r'^.*$'
+smv_branch_whitelist = r'^.*$'
+smv_released_pattern = r'^tags/.*$'
+
+smv_outputdir_format = '{ref.name}'
