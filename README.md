@@ -1,26 +1,17 @@
-# leetcode-and-algoexpert_problem_solving
-- In this repo, I will practice leetcode and algoexpert problems for my coding interview preparation.
-- Anyone want to practice leetcode or algoexpert problems at a beginning level you can look for this repo 
+# leetcode_problem_solving
+- In this repo, I will practice leetcode for my coding interview preparation.
+- Anyone want to practice leetcode problems at a beginning level you can look for this repo 
 - I will try to provide some tutorials/special notes on my code documentation which will be helpful to understand the approach
 
 ## Directory Structure
 
     Root
-     |---- AlgoExpert
-     |      |---- Easy
-     |      |---- Medium
-     |      |---- Hard
      |---- Leetcode
      |      |---- Easy
      |      |---- Medium
      |      |---- Hard
      |---- Important Concepts
      |---- README.md
-
-### AlgoExpert
-- here algoexpert problems are covered
-- included questions
-- solutions
 
 ### Leetcode
 - here leetcode easy problems are covered
