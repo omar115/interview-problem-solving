@@ -27,8 +27,40 @@ Follow up: What if the inputs contain Unicode characters? How would you adapt yo
 
 """
 
+from collections import defaultdict
+
 
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
 
-        return sorted(s) == sorted(t)
+        """
+        easy solution: O(nlogn)
+        using sorted() method we can directly check
+        but time complexity is high and might not suitable for everywhere
+        """
+        # return sorted(s) == sorted(t)
+
+        """
+        ideal solution:
+        using hash table, we can put the logic and 
+        solve this problem. checking the number of
+        occurances of each character is the solution
+        
+        complexity: O(n)
+        
+        """
+
+        count = defaultdict(int)
+        for i in s:
+            count[i] += 1
+        for i in t:
+            count[i] -= 1
+        for value in count.values():
+            if value != 0:
+                return False
+
+        return True
+
+
+x = Solution()
+print(x.isAnagram("silent", "listen"))
