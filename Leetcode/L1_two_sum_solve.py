@@ -40,14 +40,21 @@ from typing import List
 
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        nums.sort()
-        left = 0
-        r = len(nums) - 1
+        """
+
+        approach-1: brute force
+        run two loops and compare between two
+        integers to check that it match with target or not
+
+        complexity: O(n^2)
+
+        """
         for i in range(len(nums)):
-            if nums[left] + nums[r] == target:
-                return [left, r]
-            elif nums[left] + nums[r] > target:
-                r -= 1
+            j = i + 1
+            while j < len(nums):
+                if nums[i] + nums[j] == target:
+                    return [i, j]
+                j += 1
 
 
 x = Solution()
