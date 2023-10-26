@@ -50,14 +50,28 @@ class Solution:
         
         """
 
-        count = defaultdict(int)
+        # count = defaultdict(int)
+        # for i in s:
+        #     count[i] += 1
+        # for i in t:
+        #     count[i] -= 1
+        # for value in count.values():
+        #     if value != 0:
+        #         return False
+
+        dict = {}
         for i in s:
-            count[i] += 1
+            dict[i] = 1
+
+        print(dict)
+
         for i in t:
-            count[i] -= 1
-        for value in count.values():
-            if value != 0:
-                return False
+            if i in dict.values():
+                dict[i] -= 1
+                print(dict[-1])
+
+        print(dict)
+
 
         return True
 
